@@ -1,60 +1,59 @@
-exports = (typeof window === 'undefined') ? global : window;
+exports = typeof window === 'undefined' ? global : window;
 
 exports.arraysAnswers = {
-
-  indexOf : function(arr, item) {
-
-  },
-
-  sum : function(arr) {
+  indexOf: function(arr, item) {
 
   },
 
-  remove : function(arr, item) {
+  sum: function(arr) {
 
   },
 
-  removeWithoutCopy : function(arr, item) {
+  remove: function(arr, item) {
 
   },
 
-  append : function(arr, item) {
+  removeWithoutCopy: function(arr, item) {
 
   },
 
-  truncate : function(arr) {
+  append: function(arr, item) {
 
   },
 
-  prepend : function(arr, item) {
+  truncate: function(arr) {
 
   },
 
-  curtail : function(arr) {
+  prepend: function(arr, item) {
 
   },
 
-  concat : function(arr1, arr2) {
+  curtail: function(arr) {
 
   },
 
-  insert : function(arr, item, index) {
+  concat: function(arr1, arr2) {
 
   },
 
-  count : function(arr, item) {
+  insert: function(arr, item, index) {
 
   },
 
-  duplicates : function(arr) {
+  count: function(arr, item) {
 
   },
 
-  square : function(arr) {
+  duplicates: function(arr) {
 
   },
 
-  findAllOccurrences : function(arr, target) {
+  square: function(arr) {
+
+  },
+
+  findAllOccurrences: function(arr, target) {
 
   }
 };

@@ -1,16 +1,14 @@
+[![Build Status](https://travis-ci.org/rmurphey/js-assessment.svg?branch=master)](https://travis-ci.org/rmurphey/js-assessment)
+
 # A test-driven JS assessment
 
-[![Join the chat at https://gitter.im/rmurphey/js-assessment](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/rmurphey/js-assessment?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 This repo includes a set of tests that can be used to assess the skills of
-a candidate for a JavaScript position, or to improve one's own skills.
+a candidate for a JavaScript position, or to evaluate and improve one's own
+skills.
 
 ## I want to work on the tests; what do I do?
-To use the tests, you will need to install Node -- you can do this via the
-[download page](https://nodejs.org/download/) or using
-[Homebrew](http://mxcl.github.com/homebrew/) if you are on a Mac.
-
-Note that on Windows, there are some reports that you will need to restart
+To use the tests, you will need to install [Node](https://nodejs.org/). Note
+that on Windows, there are some reports that you will need to restart
 after installing Node - see #12.
 
 You can clone or download this repo. Once you have done so, from the root
@@ -34,16 +32,10 @@ You can also run (most of) the tests on the command line:
 
 The command line runner is a work in progress; contributions welcome :)
 
-You can also develop with live-reload and grunt-watch if that's your thing:
+### Available dependencies
 
-    npm install -g grunt-cli
-    npm install
-    grunt develop
-
-## I need help!
-
-There may be friendly folks willing to help you in \#js-assessment or
-\#jshotline on freenode IRC.
+The repo includes jQuery, Backbone, and Underscore. You can use these
+libraries when writing your solutions!
 
 ## I want to contribute tests; what do I do?
 
@@ -55,18 +47,12 @@ solution to the corresponding file in `app/`. Finally, it would be great if you
 could update the [answers](https://github.com/rmurphey/js-assessment-answers)
 as well.
 
-Any substantial contributions will be duly credited in the readme, as well as
-of course in the git commit log.
+If you're not sure how or where to add a test, please open an issue.
 
 ### Data-driven tests
 
 If your tests need data that can be fetched via XHR, stick a `.json` file in
 the `data` directory; you can access it at `/data/<filename>.json`.
-
-### Available dependencies
-
-The repo includes jQuery, Backbone, and Underscore. Do take advantage of these
-libraries when writing your solutions!
 
 ## I want to see the answers!
 
@@ -80,7 +66,7 @@ keep them up to date.
 
 ## I hate \<some technology you've chosen\>
 
-This repo uses [Mocha](http://visionmedia.github.com/mocha/) and
+This repo uses [Mocha](https://github.com/mochajs/mocha) and
 [Chai](http://chaijs.com/) for the tests themselves. It uses the BDD style for authoring tests.
 If this doesn't suit you, please fork away, or, better, submit a pull request that lets
 this be more flexible than it currently is.
@@ -93,7 +79,8 @@ requests welcome!
 
 # License
 
-Copyright &copy; 2012-2015 Rebecca Murphey.
+Copyright &copy; 2012-2016 Rebecca Murphey with many thanks to several
+[contributors](https://github.com/rmurphey/js-assessment/graphs/contributors).
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
 

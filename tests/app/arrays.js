@@ -15,12 +15,13 @@ describe('arrays', function() {
     expect(arraysAnswers.indexOf(a, 5)).to.eql(-1);
   });
 
-  it('you should be able to add the values of an array', function() {
+  it('you should be able to sum the items of an array', function() {
     expect(arraysAnswers.sum(a)).to.eql(10);
   });
 
   it('you should be able to remove all instances of a value from an array', function() {
     a.push(2); // Make sure the value appears more than one time
+    a.push(2); // Make sure the value appears more than one time in a row
     var result = arraysAnswers.remove(a, 2);
 
     expect(result).to.have.length(3);
@@ -104,7 +105,7 @@ describe('arrays', function() {
   });
 
   it('you should be able to find all occurrences of an item in an array', function() {
-    var result = arraysAnswers.findAllOccurrences('abcdefabc'.split(''), 'a');
+    var result = arraysAnswers.findAllOccurrences([ 1, 2, 3, 4, 5, 6, 1, 7], 1);
 
     expect(result.sort().join(' ')).to.eql('0 6');
   });
