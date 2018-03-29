@@ -7,15 +7,15 @@ a candidate for a JavaScript position, or to evaluate and improve one's own
 skills.
 
 ## I want to work on the tests; what do I do?
-To use the tests, you will need to install [Node](https://nodejs.org/). Note
+To use the tests, you will need to install [Node](https://nodejs.org/) and [Yarn](https://yarnpkg.com/en/docs/install). Note
 that on Windows, there are some reports that you will need to restart
 after installing Node - see #12.
 
 You can clone or download this repo. Once you have done so, from the root
 directory of the repo, run:
 
-    npm install
-    npm start
+    yarn install
+    yarn start
 
 You can then view the tests in your browser at
 [http://localhost:4444](http://localhost:4444).
@@ -28,7 +28,7 @@ whether it worked.
 
 You can also run (most of) the tests on the command line:
 
-    npm test
+    yarn test
 
 The command line runner is a work in progress; contributions welcome :)
 
@@ -53,16 +53,6 @@ If you're not sure how or where to add a test, please open an issue.
 
 If your tests need data that can be fetched via XHR, stick a `.json` file in
 the `data` directory; you can access it at `/data/<filename>.json`.
-
-## I want to see the answers!
-
-First, bear in mind that looking up the answers is going to teach you a whole
-lot less than you'll learn by working on the tests, even if you occasionally get
-stuck. I'd recommend only looking at the answers once you have the tests
-passing, to see if there's another way you could have approached the
-problem. When you're ready to look at the answers, you can find them
-[here](https://github.com/rmurphey/js-assessment-answers); I'll do my best to
-keep them up to date.
 
 ## I hate \<some technology you've chosen\>
 
