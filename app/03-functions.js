@@ -23,17 +23,5 @@ exports.functionsAnswers = {
 
   useArguments: function() {
 
-  },
-
-  callIt: function(fn) {
-
-  },
-
-  partialUsingArguments: function(fn) {
-
-  },
-
-  curryIt: function(fn) {
-
   }
 };
