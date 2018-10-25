@@ -34,9 +34,10 @@ describe('functions', function() {
     expect(sayItCalled).to.be.ok;
   });
 
-  it('you should be able to return a function from a function', function() {
-    expect(functionsAnswers.functionFunction('Hello')('world')).to.eql('Hello, world');
-    expect(functionsAnswers.functionFunction('Hai')('can i haz funxtion?')).to.eql('Hai, can i haz funxtion?');
+  it('you should be able to create a "partial" function', function() {
+    var partial = functionsAnswers.partial(sayIt, 'Hello', 'Ellie');
+    expect(partial('!!!')).to.eql('Hello, Ellie!!!');
+    expect(sayItCalled).to.be.ok;
   });
 
   it('you should be able to use closures', function () {
@@ -49,12 +50,6 @@ describe('functions', function() {
     for (var i = 0; i < arr.length; i++) {
       expect(funcs[i]()).to.eql(square(arr[i]));
     }
-  });
-
-  it('you should be able to create a "partial" function', function() {
-    var partial = functionsAnswers.partial(sayIt, 'Hello', 'Ellie');
-    expect(partial('!!!')).to.eql('Hello, Ellie!!!');
-    expect(sayItCalled).to.be.ok;
   });
 
   it('you should be able to use arguments', function () {

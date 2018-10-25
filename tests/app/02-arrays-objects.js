@@ -10,10 +10,6 @@ describe('arrays', function() {
     a = [ 1, 2, 3, 4 ];
   });
 
-  it('you should be able to sum the items of an array', function() {
-    expect(arraysAnswers.sum(a)).to.eql(10);
-  });
-
   it('you should be able to count the occurences of an item in an array', function() {
     var result = arraysAnswers.count([ 1, 2, 4, 4, 3, 4, 3 ], 4);
 
@@ -33,12 +29,6 @@ describe('arrays', function() {
     var result = arraysAnswers.duplicates([ 1, 2, 4, 4, 3, 3, 1, 5, 3 ]);
 
     expect(result.sort()).to.eql([1, 3, 4]);
-  });
-
-  it('you should be able to find all occurrences of an item in an array', function() {
-    var result = arraysAnswers.findAllOccurrences([ 1, 2, 3, 4, 5, 6, 1, 7], 1);
-
-    expect(result.sort().join(' ')).to.eql('0 6');
   });
 });
 

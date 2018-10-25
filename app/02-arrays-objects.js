@@ -1,10 +1,6 @@
 exports = typeof window === 'undefined' ? global : window;
 
 exports.arraysAnswers = {
-  sum: function(arr) {
-
-  },
-
   count: function(arr, item) {
 
   },
@@ -14,10 +10,6 @@ exports.arraysAnswers = {
   },
 
   duplicates: function(arr) {
-
-  },
-
-  findAllOccurrences: function(arr, target) {
 
   }
 };
